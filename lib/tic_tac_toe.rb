@@ -40,12 +40,12 @@ def valid_move?(board, index)
   #request input
   def turn(board)
   puts 'Please enter 1-9:'
-  #gets player's input and stop blank line 
+  
+  #gets player's input and stop blank line
   user_input = gets.strip
   index = input_to_index(user_input)
   
-  #check for validation, update and display 
-  board
+  #check for validation, update and display board
   if valid_move?(board, index)
     move(board, index, current_player(board))
     display_board(board)
