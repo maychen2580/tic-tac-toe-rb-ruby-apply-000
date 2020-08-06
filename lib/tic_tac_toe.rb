@@ -81,7 +81,7 @@ end
         true
 end
 end
-       #draw if noone wins and full board
+       #draw if no wins and full board
        def draw?(board)
          !won?(board) && full?(board)
          end
